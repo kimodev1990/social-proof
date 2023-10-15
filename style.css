@@ -1,0 +1,164 @@
+body{   font-family: 'League Spartan', sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;}
+
+*{  box-sizing: border-box;}
+
+.container{ display: grid;
+            grid-template-columns: minmax(450px,580px) minmax(450px,580px);
+            grid-template-rows: 350px 350px;}
+
+.first{ display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 27px;}
+
+.title-first{   font-size: 3em;
+                width: 60%;
+                color: hsl(300, 43%, 22%);}
+                
+
+.paragraph-first{   font-size: 1.2em;
+                    width: 80%;
+                    color: rgb(159, 159, 156);
+                    font-weight: bold;
+                    line-height: 1.3;}
+
+.second{    display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;}
+
+.first-stars{   display: flex;
+                background-color: hsl(300, 7%, 92%);
+                border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 400px;
+                gap: 50px;
+                margin-right: 110px;}
+
+.background-image{  background-image: url(./images/icon-star.svg);
+                    background-repeat: repeat-x;
+                    background-repeat:  space space;
+                    background-color: hsl(300, 7%, 92%);
+                    width: 100px;
+                    height: 20px;}
+
+.review{    color: hsl(300, 43%, 22%);}
+
+.second-stars{  display: flex;
+    background-color: hsl(300, 7%, 92%);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    gap: 50px;}
+
+.third-stars{   display: flex;
+    background-color: hsl(300, 7%, 92%);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    gap: 50px;
+    margin-left: 110px;}
+
+.third{ grid-column: 1/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;}
+
+.general-container{     background-color: hsl(300, 43%, 22%);
+                        width: 350px;
+                        height: 220px;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 5px 0 0 35px;}
+
+.profile-container{ display: flex;
+                    align-items: center;
+                    gap: 30px;}
+
+.img{   width: 50px;
+        height: 50px;}
+        
+.img-profile{   width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;}
+
+.data-profile{  color: white;}
+
+.name{  margin: 0;}
+
+.verify{    color: hsl(333, 80%, 67%);
+            margin: 7px 0 0 0;}
+
+.comment{   color: white;
+            line-height: 1.5;
+            width: 90%;}
+
+.colton{    margin-top: -35px;}
+
+.anne{  margin-top: 35px;}
+
+
+
+@media(max-width:900px)
+{
+    body{   align-items: normal;
+            height: auto;}
+
+    .container{ display: flex;
+                flex-direction: column;
+                width: 400px;
+                height: auto;}
+
+    .first{ padding-left: 0px;
+            flex-direction: column;
+            margin-bottom: 30px;}
+
+    .title-first{   text-align: center;
+                    width: 100%;}
+    .paragraph-first{   text-align: center;
+                        width: 100%;
+                        padding: 0px 18px;}
+
+    .first-stars{   margin-right: 0;
+                    flex-direction: column;
+                    height: 70px;
+                    gap: 0;}
+
+    .second-stars{  flex-direction: column;
+                    height: 70px;
+                    gap: 0;}
+
+    .third-stars{   margin-left: 0px;
+                    flex-direction: column;
+                    height: 70px;
+                    gap: 0;}
+
+    .review>h4{ margin: 10px 0 0 0;}
+
+    .third{ flex-direction: column;
+            margin-top: 80px;}
+
+    .general-container{ height: 250px;}
+
+    .comment{   margin-top: 10px;}
+
+    .colton{    margin-top: 0;}
+
+    .anne{  margin-top: 0;}
+}
